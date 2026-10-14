@@ -4,6 +4,9 @@ Press Enter, speak, and it acts: opens sites, plays music, finds files, tells yo
 the time, the weather or the news. Speech-to-text and the default brain both run
 **locally**, so it works without an API key or a cloud bill.
 
+![A real Jarvis session: the model calls the weather and clock tools](docs/screenshots/jarvis-session.png)
+<sub>A real session in `--text` mode with llama3.2:3b. Note the follow-up "and in Islamabad?": the agent keeps the conversation and calls the tool again.</sub>
+
 ```
 your voice ──► listen.py ──► brain.py ──► speak.py ──► you hear a reply
               (mic + Whisper)  (LLM picks     (offline TTS)
