@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editors
+.idea/
+.vscode/
+
+# Secrets: keys belong in environment variables, never in the repo
+.env
+*key*.txt
